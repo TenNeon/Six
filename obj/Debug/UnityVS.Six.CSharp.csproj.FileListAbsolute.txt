@@ -1,0 +1,13 @@
+D:\Unity\Projects\Six\Six\obj\Debug\UnityVS.Six.CSharp.csprojResolveAssemblyReference.cache
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\Unity\Projects\Six\Six\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\Unity\Projects\Six\Six\obj\Debug\Assembly-CSharp.dll
+D:\Unity\Projects\Six\Six\obj\Debug\Assembly-CSharp.pdb

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{064A3004-2448-5ADC-0DCF-C86E0BEBAB21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.0.1f1</UnityVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\RecipeTool.cs" />
+    <Compile Include="Assets\RecipeUIItem.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\Building.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\Factory.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\Harvester.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\PowerPlant.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\Smelter.cs" />
+    <Compile Include="Assets\Scripts\Entity\Buildings\Turret.cs" />
+    <Compile Include="Assets\Scripts\Entity\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Entity\ConstructionZone.cs" />
+    <Compile Include="Assets\Scripts\Entity\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Entity\EnemyScanner.cs" />
+    <Compile Include="Assets\Scripts\Entity\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\Entity\Pickup.cs" />
+    <Compile Include="Assets\Scripts\Entity\Worker.cs" />
+    <Compile Include="Assets\Scripts\Game\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Game\Cubescript.cs" />
+    <Compile Include="Assets\Scripts\Game\Debug_CommandCard.cs" />
+    <Compile Include="Assets\Scripts\Game\Ground.cs" />
+    <Compile Include="Assets\Scripts\Game\ItemPanelButton.cs" />
+    <Compile Include="Assets\Scripts\Game\ItemPanelScript.cs" />
+    <Compile Include="Assets\Scripts\Game\ItemStack.cs" />
+    <Compile Include="Assets\Scripts\Game\ItemTypeKeeper.cs" />
+    <Compile Include="Assets\Scripts\Game\Order.cs" />
+    <Compile Include="Assets\Scripts\Game\PickupScanner.cs" />
+    <Compile Include="Assets\Scripts\Game\Reactor.cs" />
+    <Compile Include="Assets\Scripts\Game\ReactorUI.cs" />
+    <Compile Include="Assets\Scripts\Game\RecipeKeeper.cs" />
+    <Compile Include="Assets\Scripts\Game\Redirector.cs" />
+    <Compile Include="Assets\Scripts\Game\ResearchCard.cs" />
+    <Compile Include="Assets\Scripts\Game\ResearchSystem.cs" />
+    <Compile Include="Assets\Scripts\Game\ResearchersPanel.cs" />
+    <Compile Include="Assets\Scripts\Game\Resource.cs" />
+    <Compile Include="Assets\Scripts\Game\ResourceExchange.cs" />
+    <Compile Include="Assets\Scripts\Game\ResourceProfile.cs" />
+    <Compile Include="Assets\Scripts\Game\SaveLoad.cs" />
+    <Compile Include="Assets\Scripts\Game\SpawnerUI.cs" />
+    <Compile Include="Assets\Scripts\Game\TestScript.cs" />
+    <Compile Include="Assets\Scripts\Game\TileData.cs" />
+    <Compile Include="Assets\Scripts\Game\WindowAutoResize.cs" />
+    <Compile Include="Assets\Scripts\Game\WorkerFinder.cs" />
+    <Compile Include="Assets\Scripts\Game\WorldData.cs" />
+    <Compile Include="Assets\Scripts\Game\WriteToFile.cs" />
+    <Compile Include="Assets\Scripts\Game\_TestUpgrade.cs" />
+    <Compile Include="Assets\Scripts\UI\Cell.cs" />
+    <Compile Include="Assets\Scripts\UI\CircularGauge.cs" />
+    <Compile Include="Assets\Scripts\UI\CommandCard.cs" />
+    <Compile Include="Assets\Scripts\UI\ConstructionPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\ConstructionPanelButton.cs" />
+    <Compile Include="Assets\Scripts\UI\ConstructionPanelOld.cs" />
+    <Compile Include="Assets\Scripts\UI\DisplayPanelScript.cs" />
+    <Compile Include="Assets\Scripts\UI\InputController.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseHandler.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\ProgressBar.cs" />
+    <Compile Include="Assets\Scripts\UI\TileMapMouse.cs" />
+    <Compile Include="Assets\Scripts\UI\UIUtil.cs" />
+    <Compile Include="Assets\Scripts\UI\ZoomControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Data\Recipes\Catspots.xml" />
+    <None Include="Assets\Data\Recipes\ExampleRecipe.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>
