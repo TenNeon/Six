@@ -13,10 +13,10 @@ public class RecipeKeeper : MonoBehaviour {
 	{
 		text = System.IO.File.ReadAllText(fileLocation);
 
-		using (XmlReader reader = XmlReader.Create(new StringReader(xmlString)))
-		{
+        //using (XmlReader reader = XmlReader.Create(new StringReader(xmlString)))
+        //{
 
-		}
+        //}
 	}
 
 }

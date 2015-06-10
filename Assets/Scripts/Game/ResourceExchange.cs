@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Vectrosity;
+//using Vectrosity;
 
 public class ResourceExchange : MonoBehaviour {
 
@@ -16,7 +16,7 @@ public class ResourceExchange : MonoBehaviour {
 	public Texture2D frontTex;
 	public Texture2D backTex;
 
-	VectorLine lines;
+    //VectorLine lines;
 
 	public void Start()
 	{
@@ -30,14 +30,14 @@ public class ResourceExchange : MonoBehaviour {
 
 	void InitLines ()
 	{
-		int numberOfLines = 50;
-		Vector3[] points = new Vector3[2 * numberOfLines];
-		points [0] = Vector3.zero;
-		points [1] = Vector3.zero;
-		lines = new VectorLine ("lines", points, lineMaterial, 1, LineType.Discrete);
-		lines.lineWidth = 5f;
-		lines.sortingOrder = 0;
-		lines.sortingLayerID = 3;
+        //int numberOfLines = 50;
+        //Vector3[] points = new Vector3[2 * numberOfLines];
+        //points [0] = Vector3.zero;
+        //points [1] = Vector3.zero;
+        //lines = new VectorLine ("lines", points, lineMaterial, 1, LineType.Discrete);
+        //lines.lineWidth = 5f;
+        //lines.sortingOrder = 0;
+        //lines.sortingLayerID = 3;
 	}
 
 	public void PlaceOrder(Order o)
@@ -104,8 +104,8 @@ public class ResourceExchange : MonoBehaviour {
 		if(showLines){buttonText = "Hide Order Lines";}
 		if (GUI.Button(new Rect(Screen.width - 130, 40, 120, 25), buttonText))
 		{
-			showLines = !showLines;
-			lines.active = showLines;
+			//showLines = !showLines;
+			//lines.active = showLines;
 		}
 	}
 
@@ -200,16 +200,16 @@ public class ResourceExchange : MonoBehaviour {
 					color = filledOrderColor;
 				}
 			}
-			if(i*2+1 < lines.points3.Length)
-			{
-				lines.points3[i*2] = start;
-				lines.points3[i*2+1] = end;
-				colors[i] = color;
-			}
+            //if(i*2+1 < lines.points3.Length)
+            //{
+            //    lines.points3[i*2] = start;
+            //    lines.points3[i*2+1] = end;
+            //    colors[i] = color;
+            //}
 
 			Debug.DrawLine(start,end,color,0.5f,false);
 		}
-		lines.SetColors(colors);
-		lines.Draw();
+        //lines.SetColors(colors);
+        //lines.Draw();
 	}	
 }

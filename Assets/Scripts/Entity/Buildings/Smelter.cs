@@ -162,13 +162,13 @@ public class Smelter : Building {
 			}
 		}
 	}
-	void OnGUI()
-	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-			windowRect = GUILayout.Window(1, windowRect, DoMyWindow, "Smelter");
-		}
-	}
+    //void OnGUI()
+    //{
+    //    if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+    //    {
+    //        windowRect = GUILayout.Window(1, windowRect, DoMyWindow, "Smelter");
+    //    }
+    //}
 	
 	void DoMyWindow(int windowID)
 	{

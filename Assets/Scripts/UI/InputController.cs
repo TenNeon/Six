@@ -30,10 +30,10 @@ public class InputController : MonoBehaviour {
 			commands.Add("OnGoIdleCommand");
 		}
 
-		foreach (var item in SelectionBox.main.selectedObjects) {
-			for (int i = 0; i < commands.Count; i++) {
-				item.SendMessage (commands[i], SendMessageOptions.DontRequireReceiver);
-			}
-		}
+        //foreach (var item in SelectionBox.main.selectedObjects) {
+        //    for (int i = 0; i < commands.Count; i++) {
+        //        item.SendMessage (commands[i], SendMessageOptions.DontRequireReceiver);
+        //    }
+        //}
 	}
 }

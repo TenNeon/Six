@@ -34,13 +34,13 @@ public class PowerPlant : Building {
 		}
 	}
 
-	void OnGUI()
-	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-			windowRect = GUILayout.Window(1, windowRect, DoMyWindow, "Power Plant");
-		}
-	}
+    //void OnGUI()
+    //{
+    //    if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+    //    {
+    //        windowRect = GUILayout.Window(1, windowRect, DoMyWindow, "Power Plant");
+    //    }
+    //}
 	
 	void DoMyWindow(int windowID)
 	{

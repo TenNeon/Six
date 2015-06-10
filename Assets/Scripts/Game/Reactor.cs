@@ -45,7 +45,7 @@ public class Reactor : MonoBehaviour {
 	void React()
 	{
 		//consume continuous inputs;
-	}
+    }
 
 	void ConsumeInputs()
 	{
@@ -72,4 +72,8 @@ public class Recipe
 	enum OutputMode {Normal, RandomPick, RandomAmount};
 	int numberOfRandomOutputs;
 	float duration;
+    public bool hasContinuousInputs() 
+    {
+        return false;
+    }
 }

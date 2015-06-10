@@ -96,13 +96,13 @@ public class Harvester : Building {
 		emptyCells.amount += 1;
 	}
 	
-	void OnGUI()
-	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-			windowRect = GUILayout.Window(3, windowRect, DoMyWindow, "Ore Harvester");
-		}
-	}
+    //void OnGUI()
+    //{
+    //    if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+    //    {
+    //        windowRect = GUILayout.Window(3, windowRect, DoMyWindow, "Ore Harvester");
+    //    }
+    //}
 	
 	void DoMyWindow(int windowID)
 	{

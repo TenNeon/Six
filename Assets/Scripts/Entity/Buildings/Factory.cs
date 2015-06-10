@@ -73,10 +73,10 @@ public class Factory : Building {
 	
 	void OnGUI()
 	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-			windowRect = GUILayout.Window(2, windowRect, DoMyWindow, "Factory");
-		}
+        //if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+        //{
+        //    windowRect = GUILayout.Window(2, windowRect, DoMyWindow, "Factory");
+        //}
 	}
 	
 	void DoMyWindow(int windowID)

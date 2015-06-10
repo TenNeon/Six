@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class SpawnerUI : MonoBehaviour {
-	ResourceSpawn controller;
+	//ResourceSpawn controller;
 	Text Name;
 	Text OutputText;
 	Text SpawnRateText;
@@ -19,7 +19,7 @@ public class SpawnerUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		controller = this.transform.GetComponent<ResourceSpawn>() as ResourceSpawn;
+		//controller = this.transform.GetComponent<ResourceSpawn>() as ResourceSpawn;
 		Transform canvas = null;
 		foreach (Transform child in this.transform) {
 			if(child.name == "Canvas")
@@ -32,11 +32,11 @@ public class SpawnerUI : MonoBehaviour {
 			Debug.Log("Spawner UI: No canvas found");
 			return;
 		}
-		if(controller == null)
-		{
-			Debug.Log("Spawner UI: No controller found");
-			return;
-		}
+        //if(controller == null)
+        //{
+        //    Debug.Log("Spawner UI: No controller found");
+        //    return;
+        //}
 
 		foreach (Transform child in canvas.transform) {
 			if(child.name == "Name")
@@ -81,36 +81,36 @@ public class SpawnerUI : MonoBehaviour {
 				itemPanelScript = itemsListPanel.GetComponent<ItemPanelScript>() as ItemPanelScript;
 			}
 		}
-		Name.text = controller.Name;
-		OutputText.text = "Produces: " + controller.outputPrefab.name;
-		SpawnRateText.text = "Spawn rate: " + controller.SpawnsPerSecond;
-		SpawnAmountText.text = "Amount per spawn: " + controller.SpawnAmount;
-		SpawnRadiusText.text = "Spawn radius: " + controller.SpawnZoneRadius;
+        //Name.text = controller.Name;
+        //OutputText.text = "Produces: " + controller.outputPrefab.name;
+        //SpawnRateText.text = "Spawn rate: " + controller.SpawnsPerSecond;
+        //SpawnAmountText.text = "Amount per spawn: " + controller.SpawnAmount;
+        //SpawnRadiusText.text = "Spawn radius: " + controller.SpawnZoneRadius;
 		itemPanelScript.UpdateItemsPanel();
 	}
 
 	public void SetSpawnAmount()
 	{
-		controller.SpawnAmount = Mathf.RoundToInt( SpawnAmountSlider.value );
-		SpawnAmountText.text = "Amount per spawn: " + controller.SpawnAmount;
+		//controller.SpawnAmount = Mathf.RoundToInt( SpawnAmountSlider.value );
+		//SpawnAmountText.text = "Amount per spawn: " + controller.SpawnAmount;
 	}
 
 	public void SetSpawnRate()
 	{
-		controller.SpawnsPerSecond = SpawnRateSlider.value;
-		SpawnRateText.text = "Spawn rate: " + controller.SpawnsPerSecond.ToString("F1");
+		//controller.SpawnsPerSecond = SpawnRateSlider.value;
+		//SpawnRateText.text = "Spawn rate: " + controller.SpawnsPerSecond.ToString("F1");
 	}
 
 	public void SetSpawnRadius()
 	{
-		controller.SpawnZoneRadius = SpawnRadiusSlider.value;
-		SpawnRadiusText.text = "Spawn radius: " + controller.SpawnZoneRadius.ToString("F1");
+		//controller.SpawnZoneRadius = SpawnRadiusSlider.value;
+		//SpawnRadiusText.text = "Spawn radius: " + controller.SpawnZoneRadius.ToString("F1");
 	}
 
 	public void SetOutput(Transform newOutput)
 	{
-		controller.outputPrefab = newOutput;
-		OutputText.text = "Produces: " + controller.outputPrefab.name;
+		//controller.outputPrefab = newOutput;
+		//OutputText.text = "Produces: " + controller.outputPrefab.name;
 	}
 	
 	public void OutputButtonClicked()

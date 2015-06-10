@@ -143,17 +143,17 @@ public class Worker : MonoBehaviour {
 
 	bool IsSelected()
 	{
-		if(SelectionBox.main != null)
-		{
-			if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-			{
-				return true;
-			}
-		}
-		else
-		{
-			Debug.LogError("No SelectionBox found!");
-		}
+        //if(SelectionBox.main != null)
+        //{
+        //    if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+        //    {
+        //        return true;
+        //    }
+        //}
+        //else
+        //{
+        //    Debug.LogError("No SelectionBox found!");
+        //}
 		return false;
 	}
 
@@ -275,9 +275,9 @@ public class Worker : MonoBehaviour {
 
 	public void OnSelectionChanged()
 	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-		}
+        //if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+        //{
+        //}
 	}
 
 	void OnGUI()

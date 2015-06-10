@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Vectrosity;
+//using Vectrosity;
 
 // Tracks how a Building deals with a given Resource.
 public class ResourceProfile : MonoBehaviour {
@@ -30,8 +30,8 @@ public class ResourceProfile : MonoBehaviour {
 	Vector3 startPoint;
 	Vector3 mouseDownPoint;
 	public Building owner;
-	VectorLine lines;
-	VectorLine linkDrawLine;
+	//VectorLine lines;
+	//VectorLine linkDrawLine;
 	public Material lineMaterial;
 	public List<ResourceProfile> linksOut = new List<ResourceProfile>();
 	public List<ResourceProfile> linksIn = new List<ResourceProfile>();
@@ -104,20 +104,20 @@ public class ResourceProfile : MonoBehaviour {
 	void InitLines ()
 	{
 		int numberOfLines = 50;
-		Vector3[] points = new Vector3[2 * numberOfLines];
-		points [0] = Vector3.zero;
-		points [1] = Vector3.zero;
-		lines = new VectorLine (resourceType + "lines", points, lineMaterial, 1, LineType.Discrete);
-		lines.lineWidth = 5f;
-		lines.sortingOrder = 0;
-		lines.sortingLayerID = 3;
-		lines.SetColor( new Color(1,0,1,0.5f) );
+        //Vector3[] points = new Vector3[2 * numberOfLines];
+        //points [0] = Vector3.zero;
+        //points [1] = Vector3.zero;
+        //lines = new VectorLine (resourceType + "lines", points, lineMaterial, 1, LineType.Discrete);
+        //lines.lineWidth = 5f;
+        //lines.sortingOrder = 0;
+        //lines.sortingLayerID = 3;
+        //lines.SetColor( new Color(1,0,1,0.5f) );
 
-		points = new Vector3[2];
-		points [0] = Vector3.zero;
-		points [1] = Vector3.zero;
-		linkDrawLine = new VectorLine (resourceType+" linkDrawLine",points, lineMaterial, 5f);
-		linkDrawLine.SetColor(Color.blue);
+        //points = new Vector3[2];
+        //points [0] = Vector3.zero;
+        //points [1] = Vector3.zero;
+        //linkDrawLine = new VectorLine (resourceType+" linkDrawLine",points, lineMaterial, 5f);
+        //linkDrawLine.SetColor(Color.blue);
 	}
 
 	public void Maintain()
@@ -336,62 +336,62 @@ public class ResourceProfile : MonoBehaviour {
 
 	void DrawLinks()
 	{
-		//each link is drawn from origin to destination
-		for(int i = 0; i < linksOut.Count; i++)
-		{
-			if(linksOut[i] != null)
-			{
-				var startPoint = transform.position;
-				var endPoint = linksOut[i].transform.position;
+        ////each link is drawn from origin to destination
+        //for(int i = 0; i < linksOut.Count; i++)
+        //{
+        //    if(linksOut[i] != null)
+        //    {
+        //        var startPoint = transform.position;
+        //        var endPoint = linksOut[i].transform.position;
 				
-				if(i*2+1 < lines.points3.Length)
-				{
-					lines.points3[i*2] = startPoint;
-					lines.points3[i*2+1] = endPoint;
-				}
-			}
-		}
-		lines.active = true;
-		lines.Draw();
+        //        if(i*2+1 < lines.points3.Length)
+        //        {
+        //            lines.points3[i*2] = startPoint;
+        //            lines.points3[i*2+1] = endPoint;
+        //        }
+        //    }
+        //}
+        //lines.active = true;
+        //lines.Draw();
 	}
 
 	void OnGUI()
 	{
-		if(SelectionBox.main.selectedObjects.Contains(this.owner.gameObject) || ResourceProfile.newLinkResourceType == resourceType || owner.hovered)
-		{
-			renderer.enabled = true;
-			lines.active = true;
-		}
-		else{
-			renderer.enabled = false;
-			lines.active = false;
-		}
+        //if(SelectionBox.main.selectedObjects.Contains(this.owner.gameObject) || ResourceProfile.newLinkResourceType == resourceType || owner.hovered)
+        //{
+        //    renderer.enabled = true;
+        //    lines.active = true;
+        //}
+        //else{
+        //    renderer.enabled = false;
+        //    lines.active = false;
+        //}
 
-		if(!renderer.enabled)
-		{
-			return;
-		}
+        //if(!renderer.enabled)
+        //{
+        //    return;
+        //}
 
-		if(isDrawingLink)
-		{
-			DrawNewLinkLine();
-		}
+        //if(isDrawingLink)
+        //{
+        //    DrawNewLinkLine();
+        //}
 
-		//mouse up- finish link if started
-		if(Input.GetMouseButtonUp(0))
-		{
-			mouseDownPoint = new Vector3(0,0,-1);
+        ////mouse up- finish link if started
+        //if(Input.GetMouseButtonUp(0))
+        //{
+        //    mouseDownPoint = new Vector3(0,0,-1);
 			
-			if(isDrawingLink)
-			{
-				CreateLink();
-				isDrawingLink = false;
-				linkDrawLine.active = false;
-				SelectionBox.Release();
-			}	
-		}
+        //    if(isDrawingLink)
+        //    {
+        //        CreateLink();
+        //        isDrawingLink = false;
+        //        linkDrawLine.active = false;
+        //        SelectionBox.Release();
+        //    }	
+        //}
 
-		DrawLinks();
+        //DrawLinks();
 	}
 
 	void OnMouseDown()
@@ -404,7 +404,7 @@ public class ResourceProfile : MonoBehaviour {
 		if(!isDrawingLink && Input.mousePosition != mouseDownPoint)
 		{
 			//mouse has moved, we're actually dragging
-			SelectionBox.Suppress();
+			//SelectionBox.Suppress();
 			isDrawingLink = true;
 			Debug.Log (Time.time + " Start drawing link for " + owner.name + " " + resourceType);
 			newLinkResourceType = resourceType;
@@ -434,15 +434,15 @@ public class ResourceProfile : MonoBehaviour {
 		renderer.color = Color.white;
 	}
 
-	void DrawNewLinkLine()
-	{
-		linkDrawLine.active = true;
-		Vector3 mousePos = Camera.main.ScreenToWorldPoint( Input.mousePosition );
-		mousePos.z = 0;
-		linkDrawLine.points3[0] = transform.position;
-		linkDrawLine.points3[1] = mousePos;
-		linkDrawLine.Draw();
-	}
+    //void DrawNewLinkLine()
+    //{
+    //    linkDrawLine.active = true;
+    //    Vector3 mousePos = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+    //    mousePos.z = 0;
+    //    linkDrawLine.points3[0] = transform.position;
+    //    linkDrawLine.points3[1] = mousePos;
+    //    linkDrawLine.Draw();
+    //}
 
 	void CreateLink()
 	{

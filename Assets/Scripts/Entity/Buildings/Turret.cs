@@ -217,13 +217,13 @@ public class Turret : Building {
 	}
 
 	Rect windowRect = new Rect(10, 10, 120, 100);
-	void OnGUI()
-	{
-		if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
-		{
-			windowRect = GUILayout.Window(0, windowRect, DoMyWindow, "Turret", GUILayout.Width(120));
-		}
-	}
+    //void OnGUI()
+    //{
+    //    if(SelectionBox.main.selectedObjects.Contains(this.gameObject))
+    //    {
+    //        windowRect = GUILayout.Window(0, windowRect, DoMyWindow, "Turret", GUILayout.Width(120));
+    //    }
+    //}
 
 	void DoMyWindow(int windowID)
 	{
