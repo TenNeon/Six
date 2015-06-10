@@ -1,0 +1,74 @@
+<Recipe>
+	<Name>
+		Example Recipe
+	</Name>
+	<Description>
+		Recipe for reference use
+	</Description>
+	<BuildingRequirements>
+		<BuildingName>
+			Smelter
+		</BuildingName>
+	</BuildingRequirements>	
+	<Inputs>
+		<InputDescription>
+			<ItemName>
+				Mixed Ore
+			</ItemName>
+			<Amount>
+				1000
+			</Amount>
+		</InputDescription>
+	</Inputs>
+	<ContinuousInputs>
+		<InputDescription>
+			<ItemName>Acid</ItemName>
+			<AmountPerTick>0.1</AmountPerTick>
+		</InputDescription>
+	</ContinuousInputs>
+	<Outputs>
+		<OutputDescription>
+			<ItemName>Iron Ingot</ItemName>
+			<OutputAmount>1</OutputAmount>
+			<OutputWeight>2</OutputWeight>
+		</OutputDescription>
+		<OutputDescription>
+			<ItemName>Copper Ingot</ItemName>
+			<OutputAmount>1</OutputAmount>
+			<OutputWeight>1</OutputWeight>
+		</OutputDescription>
+		<OutputDescription>
+			<ItemName>Gold Ingot</ItemName>
+			<OutputAmount>0.1</OutputAmount>
+			<OutputWeight>0.5</OutputWeight>
+		</OutputDescription>
+		<OutputDescription>
+			<ItemName>Mixed Slag</ItemName>
+			<OutputAmount>1</OutputAmount>
+			<OutputWeight>1</OutputWeight>
+		</OutputDescription>		
+	</Outputs>
+	<ContinuousOutputs>
+		<OutputDescription>
+			<ItemName>Heat</ItemName>
+			<OutputAmount>1000</OutputAmount>
+			<OutputWeight>1</OutputWeight>
+		</OutputDescription>		
+	</ContinuousOutputs>
+	<FailureOutputs>
+		<OutputDescription>
+			<ItemName>Mixed Ore</ItemName>
+			<OutputAmount>1000</OutputAmount>
+			<OutputWeight>1</OutputWeight>			
+		</OutputDescription>
+	</FailureOutputs>
+	<OutputMode>
+		RandomPick
+	</OutputMode>
+	<NumberOfRandomOutputs>
+		1000
+	</NumberOfRandomOutputs>
+	<Duration>
+		5.0
+	</Duration>
+</Recipe>

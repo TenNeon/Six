@@ -1,0 +1,13 @@
+﻿<Recipe>
+	<Name>Catspots</Name>
+	<Duration>12</Duration>
+	<Duration Variation>0</Duration Variation>
+	<Output Mode>AllOutputs</Output Mode>
+	<InputItem>
+		<Name />
+		<Is Continuous>False</Is Continuous>
+		<Whole Number>False</Whole Number>
+		<For Failure>False</For Failure>
+		<Weight>1</Weight>
+	</InputItem>
+</Recipe>
